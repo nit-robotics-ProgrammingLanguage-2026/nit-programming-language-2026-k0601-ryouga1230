@@ -8,16 +8,15 @@ int main(void)
     if (n < 0)
     {
         printf("NG");
-    }
-    else
-    {
-        long long sum = 0;
-        for (int i = 1; i <= n; i++)
-        {
-            sum += i;
-        }
-        printf("%lld", sum);
+        return 0;
     }
 
+    long long total = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        total += i;
+    }
+
+    printf("%lld", total);
     return 0;
 }
